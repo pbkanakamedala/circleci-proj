@@ -8,3 +8,4 @@ jobs:
       - run: echo "A first hello"
       - run: cat test.json
       - run: sed -i "s/build_date/$(date '+%Y%m%d%H%M%S')/" test.json
+      - run: cat test.json
