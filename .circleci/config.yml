@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run: echo "A first hello"
       - run: cat test.json
-      - run: sed -i "s/build_date/$(date '+%Y%m%d%H%M%S')/" dev/package.json
+      - run: sed -i "s/build_date/$(date '+%Y%m%d%H%M%S')/" package.json
