@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run: echo "A first hello"
       - run: 
-          command: yarn ng build --configuration=stage --build-optimizer --no-progress
+          command: ng build --configuration=stage --build-optimizer --no-progress
       - run: 
           name: Replace Build Number
           command: |
