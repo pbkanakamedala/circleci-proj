@@ -9,5 +9,5 @@ jobs:
       - run: 
           name: Replace Build Number
           command: |
-            sed -i "s/@build_date@/$(date '+%Y%m%d.%H%M%S')/" dev/test.json
+            sed -i "s/@build_date@/$(date '+%Y%m%d.%H%M%S')/" test.json
       - run: cat dev/test.json
