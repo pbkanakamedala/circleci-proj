@@ -7,9 +7,7 @@ jobs:
       - checkout
       - run: echo "A first hello"
       - run: 
-          command: ng build --configuration=stage --build-optimizer --no-progress
-      - run: 
           name: Replace Build Number
           command: |
-            sed -i "s/@build_date@/$(date '+%Y%m%d%H%M%S')/" dev/test.json
+            sed -i "s/@build_date@/$(date '+%Y%m%d.%H%M%S')/" dev/test.json
       - run: cat dev/test.json
